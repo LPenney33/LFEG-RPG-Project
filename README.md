@@ -9,14 +9,17 @@
 * ?
 
 ### Examples/Locations of Implemented Features for Grading
-* Inheritance - 
-* Encapsulation - 
-* Polymorphism - 
-* Abstraction - 
+* Inheritance -
+* Encapsulation -
+* Polymorphism -
+* Abstraction -
 * Godot Features
-	* Node Types - 
-	* Signals - 
-	* Scenes - 
-* Movement and Collisions - 
-* Enemies and Traps - 
-* Tilemaps and Worldbuilding - 
+	* Node Types -
+	* Signals -
+	* Scenes -
+* Movement and Collisions -
+* Enemies and Traps -
+* Tilemaps and Worldbuilding -
+
+### ?
+* Kids Are Not Your Enemies, Its Stupid To Hurt Everyone, But Everyone Says Tonight, Really Are People Playing Everybody's Reset's -
