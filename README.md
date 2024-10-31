@@ -22,4 +22,7 @@
 * Tilemaps and Worldbuilding -
 
 ### ?
-* Kids Are Not Your Enemies, Its Stupid To Hurt Everyone, But Everyone Says Tonight, Really Are People Playing Everybody's Reset's -
+* Kids Are Not Your Enemies, Its Stupid, To Hurt Everyone, But Everyone Says Tonight, Really Are People Playing Everybody's Reset's -
+* Something Once, Implemented Scenes, Tilemaps Yellow Locations Encapsulation README
+* Something Once, Implemented Scenes, Kids Done Once Template
+* Something Once, Implemented Scenes, Features README Abstraction Node Kids, Once Collision Encapsulation Abstraction Node
