@@ -1,0 +1,25 @@
+--------------------
+Package Information
+
+Battlers folders (Original & 2X/3X) contains 20 unique sprites split by the following categories:
+
+- Epic AracnoTerror
+- Epic Beach Terror
+- Epic Brood Mother
+- Epic Flayer Bug
+- Epic Mantis Lord
+- Large Bug Tank
+- Large Centipede
+- Large Golden Brood
+- Large Golden Thiefbug
+- Large Hydrabug
+- Large Wasteland Terror
+- Medium Gama Hunter
+- Medium Hunter
+- Medium Insectoid Fighter
+- Small Ant Underling
+- Small Brood Underling
+- Small Chomper
+- Small Outer Fly
+- Small Qtpillar
+- Small Venusian Scorp
