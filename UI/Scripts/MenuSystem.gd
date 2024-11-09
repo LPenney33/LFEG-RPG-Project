@@ -1,8 +1,10 @@
 extends Control
 
 
+##############   REFERENCES   ################
+
 ##MainMenucontrol reference
-@onready var mainControl = get_node("MainMenu")
+@onready var mainMenuControl = get_node("MainMenu")
 ##ToggleButton reference
 @onready var toggleButton = get_node("HamburgerButton")
 ##MainMenuBackButton reference
@@ -10,29 +12,33 @@ extends Control
 ##MainMenuMoreButton reference
 @onready var moreButton = get_node("MainMenu/VBoxContainer/BackButton")
 ##ExtendedMenucontrol reference
-@onready var xtendmenu = get_node("ExtendedMenu")
+@onready var xTendMenuControl = get_node("ExtendedMenu")
 
+
+
+##############   TOGGLING   ################
 
 #Hamburger Menu Toggling Function
 func _on_hamburger_button_pressed():
 	#Show the mainmenu and  hide the toggle button
 	toggleButton.visible = false
-	mainControl.visible = true
+	mainMenuControl.visible = true
+
+
+##############   MAIN MENU   ################
 
 #Main Menu Back Button Function
 func _on_back_button_pressed():
 	#If the MainMenu is visible, hide it and show the toggle button
-	if mainControl.visible == true:
-		mainControl.visible = false
+	if mainMenuControl.visible == true:
+		mainMenuControl.visible = false
 		toggleButton.visible = true
+	
 
+##############   EXTENDED MENU   ################
 
-
-
-
-
-
-#Mor Menu Toggling Button Function
-func _on_more_menu_button_pressed():
-	mainControl.visible = false
-	xtendmenu.visible = true
+func _on_extended_back_button_pressed():
+	#If the MoreMenu is visible, hide it and show the Main Menu
+	if xTendMenuControl.visible == true:
+		mainMenuControl.visible = true
+		xTendMenuControl.visible = false

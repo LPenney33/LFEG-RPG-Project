@@ -1,0 +1,279 @@
+[gd_scene load_steps=11 format=3 uid="uid://nnxfs18u5meo"]
+
+[ext_resource type="Script" path="res://UI/Scripts/MenuSystem.gd" id="1_jt5of"]
+[ext_resource type="Theme" uid="uid://cuii538wwkpbw" path="res://UI/Themes/BlueButton.tres" id="2_xxj3p"]
+[ext_resource type="Theme" uid="uid://dxa340xtsynfk" path="res://UI/Themes/RedButton.tres" id="3_qq6ng"]
+[ext_resource type="Theme" uid="uid://dp6tpud0a3odn" path="res://UI/Themes/OrangeButton.tres" id="4_u7kxe"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_nduhc"]
+device = -1
+physical_keycode = 4194305
+
+[sub_resource type="Shortcut" id="Shortcut_bntir"]
+events = [SubResource("InputEventKey_nduhc")]
+
+[sub_resource type="GDScript" id="GDScript_ymnku"]
+script/source = "extends Button
+
+# References to the QuitConfirm popup and MainMenu
+@onready var quitConfirmMenu = get_node(\"/root/FullUI/MenusInstance/Specific/QuitConfirm\")
+@onready var mainMenuControl = get_node(\"/root/FullUI/MenusInstance/MainMenu\")
+
+# Show Quit Confirm Menu When Button is clicked
+
+func _on_pressed():
+	quitConfirmMenu.visible = true
+	mainMenuControl.visible = false
+
+func _on_cancel_pressed():
+	quitConfirmMenu.visible = false
+	mainMenuControl.visible = true
+
+
+func _on_quit_pressed():
+	get_tree().quit()
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k5okt"]
+bg_color = Color(0.233925, 0.233925, 0.233925, 1)
+
+[sub_resource type="Theme" id="Theme_odjku"]
+LineEdit/colors/caret_color = Color(0, 0.501961, 0, 1)
+LineEdit/colors/font_color = Color(0, 0.501961, 0, 1)
+LineEdit/font_sizes/font_size = 20
+LineEdit/styles/normal = SubResource("StyleBoxFlat_k5okt")
+
+[sub_resource type="GDScript" id="GDScript_jwk3o"]
+script/source = "extends LineEdit
+
+# Adjusted paths based on your scene structure
+@onready var xTendMenuControl = get_node(\"/root/FullUI/MenusInstance/ExtendedMenu\")
+@onready var mainMenuControl = get_node(\"/root/FullUI/MenusInstance/MainMenu\")
+@onready var console = get_node(\"/root/FullUI/MenusInstance/MainMenu/VBoxContainer/ExtendedMenuInitiator/Console\")
+
+
+
+
+func _on_text_submitted(new_text: String):
+	console.visible = false
+	if new_text ==  \"admin\":
+		mainMenuControl.visible = false
+		xTendMenuControl.visible = true
+		text = str(\"\")
+	else:
+		console.visible = true
+		console.text = \"Command '\" + new_text + \"' Not Found\"
+		text = str(\"\")
+		
+"
+
+[node name="MenuSystem" type="Control"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_right = 10.0
+offset_bottom = 50.0
+grow_horizontal = 0
+script = ExtResource("1_jt5of")
+
+[node name="HamburgerButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8
+anchor_right = 0.8
+offset_left = -72.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = 95.0
+grow_horizontal = 0
+tooltip_text = "Options Menu"
+theme = ExtResource("2_xxj3p")
+theme_override_font_sizes/font_size = 45
+shortcut = SubResource("Shortcut_bntir")
+text = "☰"
+
+[node name="MainMenu" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -7.0
+anchor_top = 0.2
+anchor_right = 0.5
+anchor_bottom = 8.0
+offset_left = 8.00003
+offset_top = 16.0
+offset_right = -5.0
+offset_bottom = 16.0
+theme_override_constants/separation = 15
+
+[node name="BackButton" type="Button" parent="MainMenu/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme = ExtResource("2_xxj3p")
+text = "←"
+
+[node name="DocumentationButton" type="Button" parent="MainMenu/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme = ExtResource("2_xxj3p")
+text = "Docs
+"
+
+[node name="SaveMenuButton" type="Button" parent="MainMenu/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme = ExtResource("2_xxj3p")
+text = "Save Menu"
+
+[node name="QuitGameButton" type="Button" parent="MainMenu/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme = ExtResource("3_qq6ng")
+text = "Quit Game"
+script = SubResource("GDScript_ymnku")
+
+[node name="ExtendedMenuInitiator" type="LineEdit" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_odjku")
+script = SubResource("GDScript_jwk3o")
+
+[node name="Console" type="Label" parent="MainMenu/VBoxContainer/ExtendedMenuInitiator"]
+layout_mode = 2
+offset_top = 51.0
+offset_right = 286.0
+offset_bottom = 79.0
+theme_override_font_sizes/font_size = 20
+
+[node name="CMDPlaceHolder" type="Label" parent="MainMenu/VBoxContainer/ExtendedMenuInitiator"]
+layout_mode = 0
+offset_left = -33.0
+offset_top = -10.0
+offset_right = 87.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0, 0.501961, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "//"
+
+[node name="ExtendedMenu" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ExtendedMenu"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -7.0
+anchor_top = 0.2
+anchor_right = 0.5
+anchor_bottom = 8.0
+offset_left = 8.00003
+offset_top = 16.0
+offset_right = -5.0
+offset_bottom = 16.0
+theme_override_constants/separation = 15
+
+[node name="ExtendedBackButton" type="Button" parent="ExtendedMenu/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme = ExtResource("2_xxj3p")
+text = "←"
+
+[node name="AdminButton" type="Button" parent="ExtendedMenu/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme = ExtResource("4_u7kxe")
+text = "Admin"
+
+[node name="ExtendedMenuCmdLine" type="LineEdit" parent="ExtendedMenu/VBoxContainer"]
+layout_mode = 2
+
+[node name="Specific" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="QuitConfirm" type="Control" parent="Specific"]
+visible = false
+anchors_preset = 0
+offset_left = -272.0
+offset_top = 291.0
+offset_right = -232.0
+offset_bottom = 331.0
+
+[node name="Panel" type="Panel" parent="Specific/QuitConfirm"]
+layout_mode = 0
+offset_left = -1416.0
+offset_top = -163.0
+offset_right = 56.0
+offset_bottom = 669.0
+
+[node name="Warning" type="Label" parent="Specific/QuitConfirm/Panel"]
+layout_mode = 2
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 1426.0
+offset_bottom = 457.0
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.0
+theme_override_font_sizes/font_size = 100
+text = "WARNING
+The Progress you have made
+may not be saved."
+horizontal_alignment = 1
+
+[node name="Cancel" type="Button" parent="Specific/QuitConfirm/Panel"]
+layout_mode = 2
+offset_left = 64.0
+offset_top = 536.0
+offset_right = 445.0
+offset_bottom = 707.0
+theme = ExtResource("4_u7kxe")
+theme_override_font_sizes/font_size = 100
+text = "CANCEL"
+
+[node name="Label" type="Label" parent="Specific/QuitConfirm/Panel"]
+layout_mode = 2
+offset_left = 248.0
+offset_top = 440.0
+offset_right = 1184.0
+offset_bottom = 611.0
+theme_override_font_sizes/font_size = 40
+text = "Please consider saving the game before quitting!"
+horizontal_alignment = 1
+
+[node name="Quit" type="Button" parent="Specific/QuitConfirm/Panel"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+offset_left = 856.0
+offset_top = 536.0
+offset_right = 1409.0
+offset_bottom = 707.0
+theme = ExtResource("3_qq6ng")
+theme_override_font_sizes/font_size = 100
+text = "QUIT GAME"
+
+[node name="SaveMenu" type="Control" parent="Specific"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="pressed" from="HamburgerButton" to="." method="_on_hamburger_button_pressed"]
+[connection signal="pressed" from="MainMenu/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="MainMenu/VBoxContainer/QuitGameButton" to="MainMenu/VBoxContainer/QuitGameButton" method="_on_pressed"]
+[connection signal="text_submitted" from="MainMenu/VBoxContainer/ExtendedMenuInitiator" to="MainMenu/VBoxContainer/ExtendedMenuInitiator" method="_on_text_submitted"]
+[connection signal="pressed" from="ExtendedMenu/VBoxContainer/ExtendedBackButton" to="." method="_on_extended_back_button_pressed"]
+[connection signal="pressed" from="Specific/QuitConfirm/Panel/Cancel" to="MainMenu/VBoxContainer/QuitGameButton" method="_on_cancel_pressed"]
+[connection signal="pressed" from="Specific/QuitConfirm/Panel/Quit" to="MainMenu/VBoxContainer/QuitGameButton" method="_on_quit_pressed"]
