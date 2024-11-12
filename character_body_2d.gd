@@ -1,1 +1,1 @@
-extends orc
+extends enemy

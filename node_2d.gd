@@ -1,8 +1,8 @@
 extends Node2D
-class_name orc
+class_name enemy
 
 @onready var detection_range = $Range
-@export var Orc_SPEED = 300.0
+@export var _Enemy_SPEED = 300.0
 
 
 
