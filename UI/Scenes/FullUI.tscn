@@ -11,8 +11,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MenusInstance" parent="." instance=ExtResource("1_ri6pp")]
+[node name="HealthSystem" parent="." instance=ExtResource("2_a45hr")]
 layout_mode = 1
 
-[node name="HealthSystem" parent="." instance=ExtResource("2_a45hr")]
+[node name="MenuSystem" parent="." instance=ExtResource("1_ri6pp")]
 layout_mode = 1

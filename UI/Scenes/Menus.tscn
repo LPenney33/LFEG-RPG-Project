@@ -16,8 +16,8 @@ events = [SubResource("InputEventKey_nduhc")]
 script/source = "extends Button
 
 # References to the QuitConfirm popup and MainMenu
-@onready var quitConfirmMenu = get_node(\"/root/FullUI/MenusInstance/Specific/QuitConfirm\")
-@onready var mainMenuControl = get_node(\"/root/FullUI/MenusInstance/MainMenu\")
+@onready var quitConfirmMenu = get_node(\"/root/FullUI/MenuSystem/Specific/QuitConfirm\")
+@onready var mainMenuControl = get_node(\"/root/FullUI/MenuSystem/MainMenu\")
 
 # Show Quit Confirm Menu When Button is clicked
 
@@ -47,9 +47,9 @@ LineEdit/styles/normal = SubResource("StyleBoxFlat_k5okt")
 script/source = "extends LineEdit
 
 # Adjusted paths based on your scene structure
-@onready var xTendMenuControl = get_node(\"/root/FullUI/MenusInstance/ExtendedMenu\")
-@onready var mainMenuControl = get_node(\"/root/FullUI/MenusInstance/MainMenu\")
-@onready var console = get_node(\"/root/FullUI/MenusInstance/MainMenu/VBoxContainer/ExtendedMenuInitiator/Console\")
+@onready var xTendMenuControl = get_node(\"/root/FullUI/MenuSystem/ExtendedMenu\")
+@onready var mainMenuControl = get_node(\"/root/FullUI/MenuSystem/MainMenu\")
+@onready var console = get_node(\"/root/FullUI/MenuSystem/MainMenu/VBoxContainer/ExtendedMenuInitiator/Console\")
 
 
 
@@ -64,7 +64,7 @@ func _on_text_submitted(new_text: String):
 		console.visible = true
 		console.text = \"Command '\" + new_text + \"' Not Found\"
 		text = str(\"\")
-		
+
 "
 
 [node name="MenuSystem" type="Control"]
