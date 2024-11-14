@@ -1,7 +1,7 @@
 Completed Tasks:
 -GMolter - Completed the health bar visuals and created the base functionality for the menu system.
 -LPenney33 -
--YxngJuma -
+-YxngJuma -players sprite and movement
 -EgRim-2009 -
 
 Roadblocks:
