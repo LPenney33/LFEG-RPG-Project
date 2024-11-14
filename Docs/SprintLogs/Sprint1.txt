@@ -2,7 +2,7 @@ Completed Tasks:
 -GMolter - Completed the health bar visuals and created the base functionality for the menu system.
 -LPenney33 -
 -YxngJuma -
--EgRim-2009 -
+-EgRim-2009 - enemy1 sprite and anamation
 
 Roadblocks:
 -Finding a compatible asset library for the player, enemies, and the environment.
