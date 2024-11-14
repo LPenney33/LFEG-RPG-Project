@@ -1,0 +1,23 @@
+Completed Tasks:
+-GMolter - Completed the health bar visuals and created the base functionality for the menu system.
+-LPenney33 -
+-YxngJuma -
+-EgRim-2009 -
+
+Roadblocks:
+-Finding a compatible asset library for the player, enemies, and the environment.
+-
+-
+-
+
+Pivots:
+-GMolter - Highly considering changing the project storyline in order to fit the progress we have made and predict we will make in the next sprint.
+-LPenney33 -
+-YxngJuma -
+-EgRim-2009 -
+
+Concerns:
+-GMolter - Not following the project rubric
+-LPenney33 -
+-YxngJuma -
+-EgRim-2009 -
