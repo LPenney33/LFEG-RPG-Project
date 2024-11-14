@@ -1,0 +1,5 @@
+changed the player sprite
+created basic nodes characterbody2d
+added player movement
+added camera2d
+added collisionshape2d
