@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://nnxfs18u5meo"]
+[gd_scene load_steps=8 format=3 uid="uid://nnxfs18u5meo"]
 
 [ext_resource type="Script" path="res://UI/Scripts/MenuSystem.gd" id="1_jt5of"]
 [ext_resource type="Theme" uid="uid://cuii538wwkpbw" path="res://UI/Themes/BlueButton.tres" id="2_xxj3p"]
@@ -32,39 +32,6 @@ func _on_cancel_pressed():
 
 func _on_quit_pressed():
 	get_tree().quit()
-"
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k5okt"]
-bg_color = Color(0.233925, 0.233925, 0.233925, 1)
-
-[sub_resource type="Theme" id="Theme_odjku"]
-LineEdit/colors/caret_color = Color(0, 0.501961, 0, 1)
-LineEdit/colors/font_color = Color(0, 0.501961, 0, 1)
-LineEdit/font_sizes/font_size = 20
-LineEdit/styles/normal = SubResource("StyleBoxFlat_k5okt")
-
-[sub_resource type="GDScript" id="GDScript_jwk3o"]
-script/source = "extends LineEdit
-
-# Adjusted paths based on your scene structure
-@onready var xTendMenuControl = get_node(\"/root/FullUI/MenuSystem/ExtendedMenu\")
-@onready var mainMenuControl = get_node(\"/root/FullUI/MenuSystem/MainMenu\")
-@onready var console = get_node(\"/root/FullUI/MenuSystem/MainMenu/VBoxContainer/ExtendedMenuInitiator/Console\")
-
-
-
-
-func _on_text_submitted(new_text: String):
-	console.visible = false
-	if new_text ==  \"admin\":
-		mainMenuControl.visible = false
-		xTendMenuControl.visible = true
-		text = str(\"\")
-	else:
-		console.visible = true
-		console.text = \"Command '\" + new_text + \"' Not Found\"
-		text = str(\"\")
-
 "
 
 [node name="MenuSystem" type="Control"]
@@ -121,13 +88,6 @@ layout_mode = 2
 theme = ExtResource("2_xxj3p")
 text = "←"
 
-[node name="DocumentationButton" type="Button" parent="MainMenu/VBoxContainer"]
-custom_minimum_size = Vector2(0, 70)
-layout_mode = 2
-theme = ExtResource("2_xxj3p")
-text = "Docs
-"
-
 [node name="SaveMenuButton" type="Button" parent="MainMenu/VBoxContainer"]
 custom_minimum_size = Vector2(0, 70)
 layout_mode = 2
@@ -140,64 +100,6 @@ layout_mode = 2
 theme = ExtResource("3_qq6ng")
 text = "Quit Game"
 script = SubResource("GDScript_ymnku")
-
-[node name="ExtendedMenuInitiator" type="LineEdit" parent="MainMenu/VBoxContainer"]
-layout_mode = 2
-theme = SubResource("Theme_odjku")
-script = SubResource("GDScript_jwk3o")
-
-[node name="Console" type="Label" parent="MainMenu/VBoxContainer/ExtendedMenuInitiator"]
-layout_mode = 2
-offset_top = 51.0
-offset_right = 286.0
-offset_bottom = 79.0
-theme_override_font_sizes/font_size = 20
-
-[node name="CMDPlaceHolder" type="Label" parent="MainMenu/VBoxContainer/ExtendedMenuInitiator"]
-layout_mode = 0
-offset_left = -33.0
-offset_top = -10.0
-offset_right = 87.0
-offset_bottom = 45.0
-theme_override_colors/font_color = Color(0, 0.501961, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "//"
-
-[node name="ExtendedMenu" type="Control" parent="."]
-visible = false
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="ExtendedMenu"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -7.0
-anchor_top = 0.2
-anchor_right = 0.5
-anchor_bottom = 8.0
-offset_left = 8.00003
-offset_top = 16.0
-offset_right = -5.0
-offset_bottom = 16.0
-theme_override_constants/separation = 15
-
-[node name="ExtendedBackButton" type="Button" parent="ExtendedMenu/VBoxContainer"]
-custom_minimum_size = Vector2(0, 70)
-layout_mode = 2
-theme = ExtResource("2_xxj3p")
-text = "←"
-
-[node name="AdminButton" type="Button" parent="ExtendedMenu/VBoxContainer"]
-custom_minimum_size = Vector2(0, 70)
-layout_mode = 2
-theme = ExtResource("4_u7kxe")
-text = "Admin"
-
-[node name="ExtendedMenuCmdLine" type="LineEdit" parent="ExtendedMenu/VBoxContainer"]
-layout_mode = 2
 
 [node name="Specific" type="Control" parent="."]
 layout_mode = 3
@@ -273,7 +175,5 @@ offset_bottom = 40.0
 [connection signal="pressed" from="HamburgerButton" to="." method="_on_hamburger_button_pressed"]
 [connection signal="pressed" from="MainMenu/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="MainMenu/VBoxContainer/QuitGameButton" to="MainMenu/VBoxContainer/QuitGameButton" method="_on_pressed"]
-[connection signal="text_submitted" from="MainMenu/VBoxContainer/ExtendedMenuInitiator" to="MainMenu/VBoxContainer/ExtendedMenuInitiator" method="_on_text_submitted"]
-[connection signal="pressed" from="ExtendedMenu/VBoxContainer/ExtendedBackButton" to="." method="_on_extended_back_button_pressed"]
 [connection signal="pressed" from="Specific/QuitConfirm/Panel/Cancel" to="MainMenu/VBoxContainer/QuitGameButton" method="_on_cancel_pressed"]
 [connection signal="pressed" from="Specific/QuitConfirm/Panel/Quit" to="MainMenu/VBoxContainer/QuitGameButton" method="_on_quit_pressed"]

@@ -11,8 +11,7 @@ extends Control
 @onready var mainBackButton = get_node("MainMenu/BackButton")
 ##MainMenuMoreButton reference
 @onready var moreButton = get_node("MainMenu/VBoxContainer/BackButton")
-##ExtendedMenucontrol reference
-@onready var xTendMenuControl = get_node("ExtendedMenu")
+
 
 
 
@@ -33,12 +32,3 @@ func _on_back_button_pressed():
 	if mainMenuControl.visible == true:
 		mainMenuControl.visible = false
 		toggleButton.visible = true
-	
-
-##############   EXTENDED MENU   ################
-
-func _on_extended_back_button_pressed():
-	#If the MoreMenu is visible, hide it and show the Main Menu
-	if xTendMenuControl.visible == true:
-		mainMenuControl.visible = true
-		xTendMenuControl.visible = false
