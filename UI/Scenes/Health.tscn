@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b0dm5n8yyjlhx"]
 
-[ext_resource type="Texture2D" uid="uid://cxgr8s0na77ms" path="res://UI/Imports/healthbarUnder.png" id="1_byr5i"]
-[ext_resource type="Texture2D" uid="uid://dwfm3cqctbog4" path="res://UI/Imports/healthbarProgress.png" id="2_vb1r4"]
+[ext_resource type="Texture2D" uid="uid://cxgr8s0na77ms" path="res://UI/Assets/HealthBar/healthbarUnder.png" id="1_byr5i"]
+[ext_resource type="Texture2D" uid="uid://dwfm3cqctbog4" path="res://UI/Assets/HealthBar/healthbarProgress.png" id="2_vb1r4"]
 
 [node name="HealthSystem" type="Control"]
 layout_mode = 3

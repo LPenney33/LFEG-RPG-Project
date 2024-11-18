@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5qsploya3rgl"]
+
+[ext_resource type="Texture2D" uid="uid://ioswneu286uw" path="res://UI/Assets/Icons/Misc/Chest.png" id="2_yohlx"]
+
+[node name="InventorySystem" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InventoryNode" type="Node2D" parent="."]
+position = Vector2(2, 0)
+
+[node name="InventoryToggleButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -128.0
+offset_right = 40.0
+offset_bottom = -88.0
+scale = Vector2(3.2, 3.2)
+icon = ExtResource("2_yohlx")

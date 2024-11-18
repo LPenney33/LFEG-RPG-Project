@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwfm3cqctbog4"
-path="res://.godot/imported/healthbarProgress.png-f0ceec031d4edab6babe0599bdd176bc.ctex"
+uid="uid://duew2ao0a177j"
+path="res://.godot/imported/Magic Wand.png-3c3306c1408cfec48541929e53638f42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Imports/healthbarProgress.png"
-dest_files=["res://.godot/imported/healthbarProgress.png-f0ceec031d4edab6babe0599bdd176bc.ctex"]
+source_file="res://UI/Assets/Icons/Weapon & Tool/Magic Wand.png"
+dest_files=["res://.godot/imported/Magic Wand.png-3c3306c1408cfec48541929e53638f42.ctex"]
 
 [params]
 

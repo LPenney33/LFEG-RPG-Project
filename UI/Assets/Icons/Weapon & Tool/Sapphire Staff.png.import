@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxgr8s0na77ms"
-path="res://.godot/imported/healthbarUnder.png-1e95c7dda167bae60560bce1acebaa2b.ctex"
+uid="uid://3yywmtnp65m8"
+path="res://.godot/imported/Sapphire Staff.png-627d0d97d8f88e34b060a6c614f7df74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Imports/healthbarUnder.png"
-dest_files=["res://.godot/imported/healthbarUnder.png-1e95c7dda167bae60560bce1acebaa2b.ctex"]
+source_file="res://UI/Assets/Icons/Weapon & Tool/Sapphire Staff.png"
+dest_files=["res://.godot/imported/Sapphire Staff.png-627d0d97d8f88e34b060a6c614f7df74.ctex"]
 
 [params]
 
