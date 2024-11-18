@@ -11,6 +11,10 @@ func _process(_delta):
 		target = get_global_mouse_position()
 	velocity.x = direction.x * speed
 	velocity.y = direction.y * speed
+	#fix code
+	#if direction == 0:
+		#sprite.play("idle")
+	
 	if Input.is_action_pressed("right"):
 		sprite.play("right")
 		sprite.flip_h = false
@@ -19,7 +23,7 @@ func _process(_delta):
 		sprite.play("right")
 		sprite.flip_h = true
 
-	if Input.is_action_pressed("shift"):
+	if Input.is_action_pressed("sprint"):
 		velocity = velocity.normalized() * sprint_speed
 	else:
 		velocity = velocity.normalized() * speed
