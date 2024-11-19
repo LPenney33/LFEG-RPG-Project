@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 250
+@export var speed = 0
 @export var sprint_speed = 450
 @onready var sprite = $AnimatedSprite2D
 var target = position
@@ -12,14 +12,14 @@ func _process(_delta):
 	velocity.x = direction.x * speed
 	velocity.y = direction.y * speed
 	#fix code
-	#if direction == 0:
-		#sprite.play("idle")
+	if direction.x ==0 && direction.y ==0:
+		sprite.play("idle")
 	
-	if Input.is_action_pressed("right"):
+	if direction.x > 0:
 		sprite.play("right")
 		sprite.flip_h = false
 
-	if Input.is_action_pressed("left"):
+	if direction.x < 0:
 		sprite.play("right")
 		sprite.flip_h = true
 
