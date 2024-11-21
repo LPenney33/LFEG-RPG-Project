@@ -106,7 +106,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_75kb3")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack",
 "speed": 5.0
 }, {
@@ -175,8 +175,9 @@ position = Vector2(50, -51)
 sprite_frames = SubResource("SpriteFrames_685xj")
 animation = &"attack"
 autoplay = "idle"
-frame_progress = 0.482972
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(60, -53)
 shape = SubResource("CapsuleShape2D_e8ib6")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
