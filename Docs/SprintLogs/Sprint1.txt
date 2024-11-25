@@ -1,9 +1,10 @@
 
 Completed Tasks:
 -GMolter - Completed the health bar visuals and created the base functionality for the menu system.
+-EgRim-2009 - enemy1 sprite and anamation
 -LPenney33 - Made a terrain set and 2 different maps
 -YxngJuma -players sprite and movement
--EgRim-2009 -
+
 
 Roadblocks:
 -Finding a compatible asset library for the player, enemies, and the environment.
@@ -21,4 +22,4 @@ Concerns:
 -GMolter - Not following the project rubric
 -LPenney33 - Procrastination
 -YxngJuma -
--EgRim-2009 -
+-EgRim-2009 - not acustumed to code
