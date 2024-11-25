@@ -484,7 +484,7 @@ radius = 55.8555
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(9.37714, -2.30857)
-script = ExtResource("1_3d6n3")
+script = ExtResource("1_p6nsl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.906766, -2.98265)
@@ -493,10 +493,12 @@ animation = &"idle up"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 position = Vector2(0.106642, 1.19209e-07)
 scale = Vector2(-97.1914, -40.3046)
 shape = SubResource("CapsuleShape2D_hh5rf")
+
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 
 [node name="range" type="Area2D" parent="."]
 scale = Vector2(0.906766, -2.98265)
