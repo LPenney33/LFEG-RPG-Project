@@ -1437,7 +1437,7 @@ sources/2 = SubResource("TileSetAtlasSource_lnvbd")
 sources/3 = SubResource("TileSetAtlasSource_k24g3")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_moks2"]
-size = Vector2(17, 16.75)
+size = Vector2(17, 28)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b7qa7"]
 size = Vector2(26, 56.5938)
@@ -1490,7 +1490,7 @@ tile_set = SubResource("TileSet_5ofxb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneControl/HOA1-Teleporter"]
 z_index = 1
-position = Vector2(472, 263.375)
+position = Vector2(472, 269)
 shape = SubResource("RectangleShape2D_moks2")
 
 [node name="HOUSE-Teleporter" type="Area2D" parent="SceneControl"]

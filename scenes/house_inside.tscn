@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://bdxf3r6fdemne"]
+[gd_scene load_steps=12 format=4 uid="uid://bdxf3r6fdemne"]
 
 [ext_resource type="Texture2D" uid="uid://cjq47ve7vj8pv" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_C_Interiors.png" id="1_r31vh"]
 [ext_resource type="Texture2D" uid="uid://dh8pqu8wu508u" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_E_Grand_Town1.png" id="2_e2kvl"]
@@ -1042,6 +1042,12 @@ sources/1 = SubResource("TileSetAtlasSource_ytq7c")
 sources/2 = SubResource("TileSetAtlasSource_sprg8")
 sources/3 = SubResource("TileSetAtlasSource_s627v")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hirpo"]
+size = Vector2(28, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_flwdl"]
+size = Vector2(16, 36)
+
 [node name="House Inside" type="Node2D"]
 
 [node name="Background" type="TileMapLayer" parent="."]
@@ -1063,3 +1069,17 @@ tile_set = SubResource("TileSet_ui6rb")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(148, 7)
 zoom = Vector2(2.88, 2.88)
+
+[node name="SceneControl" type="Node2D" parent="."]
+
+[node name="SAVEGAME" type="Area2D" parent="SceneControl"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SceneControl/SAVEGAME"]
+position = Vector2(4, -79)
+shape = SubResource("RectangleShape2D_hirpo")
+
+[node name="HOUSEOUTSIDE-Teleporter" type="Area2D" parent="SceneControl"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SceneControl/HOUSEOUTSIDE-Teleporter"]
+position = Vector2(56, 93)
+shape = SubResource("RectangleShape2D_flwdl")

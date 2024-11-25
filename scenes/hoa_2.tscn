@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://cjqgmrvu1jyss"]
+[gd_scene load_steps=15 format=4 uid="uid://cjqgmrvu1jyss"]
 
 [ext_resource type="Texture2D" uid="uid://ck2m02tvq067b" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_B_Exteriors.png" id="1_s126l"]
 [ext_resource type="Texture2D" uid="uid://chsxmxkdxa0s2" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_A_Hills2.png" id="2_qledy"]
@@ -1699,6 +1699,8 @@ size = Vector2(12.25, 18.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nilcv"]
 size = Vector2(20, 54)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_0bdl6"]
+
 [node name="HOA 2" type="Node2D"]
 
 [node name="Below" type="TileMapLayer" parent="."]
@@ -1766,6 +1768,13 @@ shape = SubResource("RectangleShape2D_5loia")
 z_index = 1
 position = Vector2(2, 143)
 shape = SubResource("RectangleShape2D_nilcv")
+
+[node name="Area2D" type="Area2D" parent="SceneControl"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SceneControl/Area2D"]
+z_index = 1
+position = Vector2(440, 457)
+shape = SubResource("CircleShape2D_0bdl6")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(599, 221)

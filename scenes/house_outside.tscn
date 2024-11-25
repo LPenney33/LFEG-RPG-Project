@@ -1963,7 +1963,7 @@ size = Vector2(20, 35)
 size = Vector2(13.875, 24)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ckd8i"]
-size = Vector2(12, 17)
+size = Vector2(12, 28)
 
 [node name="House Outside" type="Node2D"]
 
@@ -2007,11 +2007,11 @@ z_index = 1
 position = Vector2(592, 73)
 shape = SubResource("RectangleShape2D_u0574")
 
-[node name="HOUSE-Teleporter" type="Area2D" parent="SceneControl"]
+[node name="HOUSEINSIDE-Teleporter" type="Area2D" parent="SceneControl"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SceneControl/HOUSE-Teleporter"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SceneControl/HOUSEINSIDE-Teleporter"]
 z_index = 2
-position = Vector2(88, 103.5)
+position = Vector2(88, 109)
 shape = SubResource("RectangleShape2D_ckd8i")
 
 [node name="Camera2D" type="Camera2D" parent="."]
