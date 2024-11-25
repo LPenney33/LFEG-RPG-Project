@@ -11,5 +11,3 @@ zoom = Vector2(5, 5)
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_g1i7p")]
 position = Vector2(43, -51)
 scale = Vector2(0.5, 0.5)
-speed = 50
-sprint_speed = 100

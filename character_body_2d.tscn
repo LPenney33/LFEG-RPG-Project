@@ -1,9 +1,9 @@
 [gd_scene load_steps=27 format=3 uid="uid://cfpqxir1ej0yv"]
 
 [ext_resource type="Script" path="res://character_body_2d.gd" id="1_p6nsl"]
-[ext_resource type="Texture2D" uid="uid://btn7kllvrhka4" path="res://Soldier/Soldier with shadows/Soldier-Idle.png" id="2_8770b"]
-[ext_resource type="Texture2D" uid="uid://bu2xep52y1yeo" path="res://Soldier/Soldier with shadows/Soldier-Attack01.png" id="3_gbhkc"]
-[ext_resource type="Texture2D" uid="uid://cfysicva2d6tt" path="res://Soldier/Soldier with shadows/Soldier-Walk.png" id="3_p54v0"]
+[ext_resource type="Texture2D" uid="uid://btn7kllvrhka4" path="res://PlayerFolder/Soldier/Soldier with shadows/Soldier-Idle.png" id="2_8770b"]
+[ext_resource type="Texture2D" uid="uid://bu2xep52y1yeo" path="res://PlayerFolder/Soldier/Soldier with shadows/Soldier-Attack01.png" id="3_gbhkc"]
+[ext_resource type="Texture2D" uid="uid://cfysicva2d6tt" path="res://PlayerFolder/Soldier/Soldier with shadows/Soldier-Walk.png" id="3_p54v0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_byyts"]
 atlas = ExtResource("3_gbhkc")
