@@ -9,8 +9,7 @@ Completed Tasks:
 Roadblocks:
 -Finding a compatible asset library for the player, enemies, and the environment.
 -Scene transfer
--
--
+-Player movement
 
 Pivots:
 -GMolter - Highly considering changing the project storyline in order to fit the progress we have made and predict we will make in the next sprint.
