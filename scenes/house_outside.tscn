@@ -2013,6 +2013,3 @@ shape = SubResource("RectangleShape2D_u0574")
 z_index = 2
 position = Vector2(88, 109)
 shape = SubResource("RectangleShape2D_ckd8i")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(200, 18)
