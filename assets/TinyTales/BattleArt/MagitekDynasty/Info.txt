@@ -1,0 +1,22 @@
+--------------------
+Package Information
+
+Battlers folders (Original & 2X/3X) contains 18 sprites split by the following categories:
+- Dynasty Gunner (with 1 variation)
+- Dynasty Halberdier
+- Dynasty Assassin
+- Dynasty Soldier
+- Dynasty Duelist
+- Dynasty Bowman
+- Dynasty Hero
+- Dynasty Warrior Princess
+- Empire MechSwordsman
+- Empire RoboSoldier
+- Empire Mechanic
+- Empire Sapper
+- Empire Sniper
+- Empire Soldier
+- Empire Elite Soldier
+- Empire Healer
+- Empire General
+- Human Noble
