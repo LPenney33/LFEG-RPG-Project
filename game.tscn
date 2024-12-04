@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://dckgwtg31wmx5"]
+
+[ext_resource type="PackedScene" uid="uid://b0dm5n8yyjlhx" path="res://UI/Scenes/Health.tscn" id="1_xh4ro"]
+[ext_resource type="PackedScene" uid="uid://nnxfs18u5meo" path="res://UI/Scenes/Menus.tscn" id="2_3vkhb"]
+[ext_resource type="PackedScene" uid="uid://b7sgm1kestp0s" path="res://scenes/house_outside.tscn" id="2_6h4mq"]
+[ext_resource type="PackedScene" uid="uid://b0m5yi6g22qc4" path="res://character_body_2d.tscn" id="3_i0erv"]
+
+[node name="Game" type="Node2D"]
+
+[node name="House Outside" parent="." instance=ExtResource("2_6h4mq")]
+visible = false
+position = Vector2(416, 384)
+scale = Vector2(2, 2)
+
+[node name="Enemy" parent="." instance=ExtResource("3_i0erv")]
+z_index = 5
+position = Vector2(519, 327)
+scale = Vector2(3, -0.738)
+
+[node name="Camera2D" type="Camera2D" parent="Enemy"]
+position = Vector2(-2.28882e-05, 1.33514e-05)
+scale = Vector2(0.333333, -1.35501)
+zoom = Vector2(2, 2)
+
+[node name="FullUI" type="Control" parent="Enemy/Camera2D"]
+z_index = 6
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -378.0
+offset_top = -302.0
+offset_right = -378.0
+offset_bottom = -302.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthSystem" parent="Enemy/Camera2D/FullUI" instance=ExtResource("1_xh4ro")]
+layout_mode = 1
+offset_left = -120.0
+offset_top = 33.0
+offset_right = -120.0
+offset_bottom = 33.0
+
+[node name="MenuSystem" parent="Enemy/Camera2D/FullUI" instance=ExtResource("2_3vkhb")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 861.0
+offset_top = 49.0
+offset_right = 861.0
+offset_bottom = 49.0
+grow_horizontal = 1
