@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://b8uk001j1bmsu"]
+[gd_scene load_steps=12 format=4 uid="uid://b3tnby1g5boht"]
 
 [ext_resource type="Texture2D" uid="uid://ck2m02tvq067b" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_B_Exteriors.png" id="1_ltwby"]
 [ext_resource type="Texture2D" uid="uid://chsxmxkdxa0s2" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_A_Hills2.png" id="2_roxvf"]
