@@ -1,13 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://dyfqi14kw1pv3"]
+[gd_scene load_steps=3 format=3 uid="uid://dyfqi14kw1pv3"]
 
-[ext_resource type="PackedScene" uid="uid://cfpqxir1ej0yv" path="res://character_body_2d.tscn" id="1_g1i7p"]
+[ext_resource type="PackedScene" uid="uid://cfpqxir1ej0yv" path="res://player.tscn" id="1_g1i7p"]
+[ext_resource type="PackedScene" path="res://enemy.tscn" id="2_lxymg"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(43, -50)
-zoom = Vector2(5, 5)
+position = Vector2(-212, -212)
+rotation = 3.14159
+scale = Vector2(2.11093, 2.11029)
+anchor_mode = 0
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_g1i7p")]
-position = Vector2(43, -51)
-scale = Vector2(0.5, 0.5)
+position = Vector2(28, -26)
+scale = Vector2(3.59, -1)
+
+[node name="enemy" parent="." instance=ExtResource("2_lxymg")]
+position = Vector2(273, -31)
+scale = Vector2(3, 3)

@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name player
 
 @export var speed = 50
 @export var sprint_speed = 100
@@ -17,15 +18,15 @@ func _process(_delta):
 	velocity.x = direction.x * speed
 	velocity.y = direction.y * speed
 	#fix code
-	if direction.x ==0 && direction.y ==0 && isAttacking == false:
+	if direction.x ==0 && direction.y ==0 && !isAttacking:
 		sprite.play("idle")
 	
-	if direction.x > 0 && isAttacking== false:
+	if direction.x > 0 && !isAttacking:
 		sprite.play("right")
 		sprite.flip_h = false
 		facing = Directions.RIGHT
 
-	if direction.x < 0 && isAttacking == false:
+	if direction.x < 0 && !isAttacking:
 		sprite.play("right")
 		sprite.flip_h = true
 		facing = Directions.LEFT
@@ -54,3 +55,8 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 	if (sprite.animation == "attack"):
 		isAttacking = false
 		sprite.play("idle")
+
+
+func _on_range_body_entered(body: Node2D) -> void:
+	if body.name == "enemy":
+		pass;
