@@ -1,0 +1,29 @@
+--------------------
+Package Information
+
+Battlers folders (Original & 2X/3X) contains 25 sprites:
+- Kai, The Absolute Overlord
+- Arachnea, Treasonus Affection
+- Bastella, Voice of the Gods
+- Doram, The Chaos Legion
+- Cologego, The Great Wall
+- Okuul, The Dark Soverign
+- Demigorgo, The Great Force
+- Feysarita, Queen of the Fairies
+- Rognas, The Fire King
+- Golo, The Great Wall
+- Mirabelle, The Ice Queen
+- Icelot, The Frigid Zealot
+- Jodiniar, Ruler of the North
+- Yselia, Lady of the Woods
+- Osiria, The Lightsworn
+- Meliae, The Corrupter
+- Gazzo, The Metal Monarch
+- Mizra, The Devourer of Worlds
+- Mikazuki, The Emperor of the New World
+- Selim, The Temptress of Void
+- Tauromino, The Unbreakable
+- Lei, The Thunder Empress
+- Undine, The Hand of Mercy
+- Vyrlodhum, The Water Kaiser
+- Xoria, The Architect of Worlds

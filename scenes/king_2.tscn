@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8250siv32yd5"]
+
+[ext_resource type="Texture2D" uid="uid://bckqly53suq14" path="res://assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Player/Player.png" id="1_hnmbx"]
+[ext_resource type="Texture2D" uid="uid://dhjrofhsuh7nf" path="res://assets/Cute_Fantasy_Free/Cute_Fantasy_Free/Player/red-crown-18px.png" id="2_mwrb7"]
+
+[node name="King 2" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hnmbx")
+region_enabled = true
+region_rect = Rect2(0, 0, 32, 32)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+
+[node name="Red-crown-18Px" type="Sprite2D" parent="."]
+position = Vector2(-0.525, -7.175)
+scale = Vector2(0.944444, 0.425)
+texture = ExtResource("2_mwrb7")

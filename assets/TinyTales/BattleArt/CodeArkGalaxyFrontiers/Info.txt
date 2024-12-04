@@ -1,0 +1,26 @@
+--------------------
+Package Information
+
+Battlers folders (Original & 2X/3X) contains 19 unique sprites (and its respective recolors, 125 sprites in total) split by the following categories:
+
+- Alien Assassin
+- Alien Claw Trooper
+- Alien Diver (+ 1 variation)
+- Alien Higher Lifeform
+- Alien Parasite (+ 1 variation)
+- Alien Shellworm
+- Federation Mech Aerial Type
+- Federation Mech Chimera Type (+ 1 variation)
+- Federation Mech Elite Type
+- Federation Mech Laser Type
+- Federation Mech Spider Type
+- Federation Mech Spybot (+ 1 variation)
+- Galaxy Rangers Beater
+- Galaxy Rangers Blademaster
+- Galaxy Rangers Brainpower (+ 1 variation)
+- Galaxy Rangers Eliminator (+ 1 variation)
+- Galaxy Rangers Gunslinger
+- Galaxy Rangers Hacker
+
+BONUS!
+- Cathedral Dreadnought (Alien Mothership)

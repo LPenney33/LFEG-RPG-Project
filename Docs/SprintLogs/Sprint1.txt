@@ -1,0 +1,24 @@
+
+Completed Tasks:
+-GMolter - Completed the health bar visuals and created the base functionality for the menu system.
+-EgRim-2009 - enemy1 sprite and anamation
+-LPenney33 - Made a terrain set and 2 different maps
+-YxngJuma -players sprite and movement
+
+
+Roadblocks:
+-Finding a compatible asset library for the player, enemies, and the environment.
+-Scene transfer
+-Player movement
+
+Pivots:
+-GMolter - Highly considering changing the project storyline in order to fit the progress we have made and predict we will make in the next sprint.
+-LPenney33 - Also considering changing story to fit progress, interior maps take long as you cannot really make a terrain set for decoration.
+-YxngJuma -changed the player sprite, created basic nodes characterbody2d, added player movement, added camera2d, added collisionshape2d
+-EgRim-2009 -
+
+Concerns:
+-GMolter - Not following the project rubric
+-LPenney33 - Procrastination
+-YxngJuma -
+-EgRim-2009 - not acustumed to code

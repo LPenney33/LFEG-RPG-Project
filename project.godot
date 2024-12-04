@@ -14,7 +14,7 @@ config/name="LFEG RPG Project"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
-[dialogic]
+
 
 directories/dch_directory={}
 directories/dtl_directory={}
