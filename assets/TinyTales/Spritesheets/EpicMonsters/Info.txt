@@ -1,0 +1,34 @@
+--------------------
+Package Information
+
+Frame Size:
+- Original = 16x20
+- 2x = 32x40
+- 3x = 48x60
+
+Sprites Folder (Original & RPG Maker), Contains 25 sprites:
+- Akkoraken
+- Sir. A.K.S.
+- Askalon
+- Fenixray
+- Debiru
+- Harut
+- Jotundrago
+- Kerberus
+- King Goblin
+- Korondoggu
+- Kothumus, Dragon of the Earth
+- Levirak
+- Marut
+- Mimico
+- Minos
+- Mothritha
+- Onodoron, Dragon of the Deep
+- Reihu
+- Sarendas, Dragon of the Sky
+- Sirius
+- Sokeb
+- Sunajira
+- Tarasqudo
+- Teraphosa
+- Ulderria, Dragon of Origin
