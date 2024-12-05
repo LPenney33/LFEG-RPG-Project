@@ -1,9 +1,10 @@
-[gd_scene load_steps=17 format=4 uid="uid://b7m5xbg2h5qp0"]
+[gd_scene load_steps=18 format=4 uid="uid://b7m5xbg2h5qp0"]
 
 [ext_resource type="Texture2D" uid="uid://ck2m02tvq067b" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_B_Exteriors.png" id="1_gp1ka"]
 [ext_resource type="Texture2D" uid="uid://chsxmxkdxa0s2" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_A_Hills2.png" id="2_df3to"]
 [ext_resource type="Texture2D" uid="uid://dh8pqu8wu508u" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_E_Grand_Town1.png" id="3_r8sok"]
 [ext_resource type="Texture2D" uid="uid://dfj3dgns4knm7" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_E_Small_Village2.png" id="4_gnjqn"]
+[ext_resource type="Script" path="res://scenes/scene_control.gd" id="5_xftc1"]
 [ext_resource type="PackedScene" path="res://player/player.tscn" id="6_nrbvu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8u3f5"]
@@ -1999,6 +2000,7 @@ tile_map_data = PackedByteArray("AAACAPr/AAAAAAQAAAAHAPn/AAAAAAQAAAALAPf/AAAAAAQ
 tile_set = SubResource("TileSet_dk1sj")
 
 [node name="SceneControl" type="Node2D" parent="."]
+script = ExtResource("5_xftc1")
 
 [node name="HOA1-Teleporter" type="Area2D" parent="SceneControl"]
 
