@@ -172,7 +172,7 @@ radius = 55.8555
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(9.37714, -2.30857)
-script = ExtResource("1_3d6n3")
+script = ExtResource("1_i08jl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0.106642, -0.433169)

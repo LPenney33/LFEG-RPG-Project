@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-@export var speed = 50
-@export var sprint_speed = 100
+@export var speed = 100
+@export var sprint_speed = 450
 @onready var sprite = $AnimatedSprite2D
 var target = position
 var isAttacking = false
