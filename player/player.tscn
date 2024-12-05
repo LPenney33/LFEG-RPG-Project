@@ -1,6 +1,6 @@
 [gd_scene load_steps=64 format=3 uid="uid://b0m5yi6g22qc4"]
 
-[ext_resource type="Script" path="res://character_body_2d.gd" id="1_3d6n3"]
+[ext_resource type="Script" path="res://player/player.gd" id="1_i08jl"]
 [ext_resource type="Texture2D" uid="uid://byo5xrwmdhdc3" path="res://assets/Player/Player.png" id="2_10vv4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yqofb"]
@@ -481,7 +481,7 @@ radius = 55.8555
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(9.37714, -2.30857)
-script = ExtResource("1_3d6n3")
+script = ExtResource("1_i08jl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.906766, -2.98265)
