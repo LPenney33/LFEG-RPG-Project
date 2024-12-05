@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=3 uid="uid://b0m5yi6g22qc4"]
+[gd_scene load_steps=64 format=3 uid="uid://d1sfbr37wjpp5"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_i08jl"]
 [ext_resource type="Texture2D" uid="uid://byo5xrwmdhdc3" path="res://assets/Player/Player.png" id="2_10vv4"]
@@ -479,7 +479,7 @@ height = 1.24669
 [sub_resource type="CircleShape2D" id="CircleShape2D_x4dh4"]
 radius = 55.8555
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D"]
 scale = Vector2(9.37714, -2.30857)
 script = ExtResource("1_i08jl")
 
