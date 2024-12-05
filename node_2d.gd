@@ -1,7 +1,6 @@
 extends Node2D
 class_name Enemy
 
-@onready var detection_range = $Range
 @export var _Enemy_SPEED = 55
 
 

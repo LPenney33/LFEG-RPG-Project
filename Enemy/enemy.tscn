@@ -432,7 +432,7 @@ height = 1.24669
 [sub_resource type="CircleShape2D" id="CircleShape2D_x4dh4"]
 radius = 55.8555
 
-[node name="enemy_1" type="CharacterBody2D"]
+[node name="Enemy_1" type="CharacterBody2D"]
 scale = Vector2(9.37714, -2.30857)
 script = ExtResource("1_3d6n3")
 
