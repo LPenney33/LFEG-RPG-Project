@@ -236,6 +236,8 @@ radius = 55.8555
 
 [node name="player" type="CharacterBody2D"]
 scale = Vector2(9.37714, -2.30857)
+collision_mask = 2
+motion_mode = 1
 script = ExtResource("1_xei1s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -254,6 +256,7 @@ shape = SubResource("CapsuleShape2D_hh5rf")
 
 [node name="range" type="Area2D" parent="."]
 scale = Vector2(0.906766, -2.98265)
+collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="range"]
 position = Vector2(3.8147e-06, 0)

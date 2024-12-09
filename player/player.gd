@@ -65,7 +65,8 @@ func _process(_delta):
 			sprite.flip_h= false
 
 func _physics_process(_delta):
-
+	var collision = get_slide_collision_count()
+	print(collision)
 	move_and_slide()
 
 
