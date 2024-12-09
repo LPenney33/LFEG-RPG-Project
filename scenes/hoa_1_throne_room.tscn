@@ -3021,10 +3021,10 @@ position = Vector2(201, 40)
 [node name="SceneControlHOA1Throne" type="Node2D" parent="."]
 script = ExtResource("10_gq3r5")
 
-[node name="HOA1OUTSIDE-Teleporter" type="Area2D" parent="SceneControlHOA1Throne"]
+[node name="HOA1HALL-Teleporter" type="Area2D" parent="SceneControlHOA1Throne"]
 
-[node name="HOA1OUTSIDETeleport" type="CollisionShape2D" parent="SceneControlHOA1Throne/HOA1OUTSIDE-Teleporter"]
+[node name="HOA1HALLTeleport" type="CollisionShape2D" parent="SceneControlHOA1Throne/HOA1HALL-Teleporter"]
 position = Vector2(184, 224)
 shape = SubResource("RectangleShape2D_olg7q")
 
-[connection signal="body_entered" from="SceneControlHOA1Throne/HOA1OUTSIDE-Teleporter" to="SceneControlHOA1Throne" method="_on_hoa_1outside_teleport_child_entered_tree"]
+[connection signal="body_entered" from="SceneControlHOA1Throne/HOA1HALL-Teleporter" to="SceneControlHOA1Throne" method="_on_hoa_1hall_teleport_child_entered_tree"]
