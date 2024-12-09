@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cj7u6owgvd2r0"]
+
+[ext_resource type="PackedScene" uid="uid://b7m5xbg2h5qp0" path="res://scenes/house_outside.tscn" id="1_qyu0a"]
+
+[node name="Game" type="Node2D"]
+
+[node name="House Outside" parent="." instance=ExtResource("1_qyu0a")]
