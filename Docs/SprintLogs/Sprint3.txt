@@ -1,24 +1,24 @@
 
 Completed Tasks:
--GMolter -
+-GMolter - Wanting to destroy my computer.
 -EgRim-2009 -
 -LPenney33 -
 -YxngJuma -
 
 
 Roadblocks:
--
--
+-Resolving the merge conflicts we had.
+-Finding the (somehow) lost player sprite anamations.
 -
 
 Pivots:
--GMolter -
+-GMolter - Removed the inventory system.
 -LPenney33 -
 -YxngJuma -
 -EgRim-2009 -
 
 Concerns:
--GMolter -
+-GMolter -Getting a decent enough of a grade to pass this class with at least a B.
 -LPenney33 -
 -YxngJuma -
 -EgRim-2009 -
