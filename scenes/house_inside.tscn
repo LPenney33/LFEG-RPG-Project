@@ -1,11 +1,10 @@
-[gd_scene load_steps=14 format=4 uid="uid://bdxf3r6fdemne"]
+[gd_scene load_steps=13 format=4 uid="uid://bdxf3r6fdemne"]
 
 [ext_resource type="Texture2D" uid="uid://cjq47ve7vj8pv" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_C_Interiors.png" id="1_r31vh"]
 [ext_resource type="Texture2D" uid="uid://dh8pqu8wu508u" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_E_Grand_Town1.png" id="2_e2kvl"]
 [ext_resource type="Texture2D" uid="uid://dktgoywt530kw" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_D_Interiors.png" id="3_vbyq6"]
 [ext_resource type="Texture2D" uid="uid://ck2m02tvq067b" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_B_Exteriors.png" id="4_fkn8i"]
 [ext_resource type="PackedScene" uid="uid://cwtagbirattfe" path="res://player/player.tscn" id="5_1gw6u"]
-[ext_resource type="Script" path="res://scene controllers/scene_control_inside.gd" id="6_rgwkp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ljhxw"]
 texture = ExtResource("1_r31vh")
@@ -1083,7 +1082,6 @@ tile_map_data = PackedByteArray("AAAOAAAAAwAIAA0AAAAPAAAAAwAJAA0AAAAPAAEAAwALAA0
 tile_set = SubResource("TileSet_ui6rb")
 
 [node name="SceneControlINSIDE" type="Node2D" parent="."]
-script = ExtResource("6_rgwkp")
 
 [node name="SAVEGAME" type="Area2D" parent="SceneControlINSIDE"]
 
