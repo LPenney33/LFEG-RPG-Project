@@ -1702,6 +1702,7 @@ size = Vector2(12.25, 28.25)
 size = Vector2(20, 54)
 
 [node name="HOA 2" type="Node2D"]
+position = Vector2(0, 64)
 
 [node name="Below" type="TileMapLayer" parent="."]
 z_index = 1
@@ -1756,7 +1757,14 @@ tile_set = SubResource("TileSet_bkpud")
 [node name="player" parent="." instance=ExtResource("6_q3ydh")]
 z_index = 5
 position = Vector2(43, 161)
-scale = Vector2(1, -0.246)
+scale = Vector2(1.5, -0.369)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+zoom = Vector2(4, 4)
+limit_left = 0
+limit_top = 0
+limit_right = 1200
+limit_bottom = 593
 
 [node name="SceneControlHOA2" type="Node2D" parent="."]
 script = ExtResource("7_omypd")
