@@ -7,12 +7,12 @@ Completed Tasks:
 
 
 Roadblocks:
--
+-Finishing the main aspects of the game.
 -
 -
 
 Pivots:
--GMolter -
+-GMolter - Considering adding a last minute mana feature.
 -LPenney33 -
 -YxngJuma -
 -EgRim-2009 -
