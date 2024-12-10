@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-@export var speed = 100
-@export var sprint_speed = 200
+@export var speed = 60
+@export var sprint_speed = 120
 @onready var sprite = $AnimatedSprite2D
 var target = position
 var isAttacking = false
@@ -18,6 +18,9 @@ func _process(_delta):
 	#fix code
 	if direction.x ==0 && direction.y ==0 && !isAttacking:
 		sprite.play("idle")
+
+	if direction.x ==0 && direction.y ==0 && facing == Directions.UP && !isAttacking:
+		sprite.play("idle_up")
 
 	if direction.x > 0 && !isAttacking:
 		sprite.play("right")
@@ -49,6 +52,10 @@ func _process(_delta):
 			sprite.play("attack_right")
 			sprite.flip_h = false
 
+		if facing == Directions.UP && isAttacking :
+			sprite.play("attack_up")
+			sprite.flip_h = false
+
 	if Input.is_action_pressed("sprint") && !isAttacking:
 		velocity = velocity.normalized() * sprint_speed
 	else:
@@ -60,17 +67,31 @@ func _process(_delta):
 			sprite.play("attack_right")
 			sprite.flip_h= true
 
-		if facing == Directions.RIGHT && isAttacking :
+		elif facing == Directions.RIGHT && isAttacking :
 			sprite.play("attack_right")
 			sprite.flip_h= false
+
+		elif facing == Directions.DOWN && isAttacking :
+			sprite.play("attack_down")
+			sprite.flip_h= false
+
+		else:
+			pass
 
 func _physics_process(_delta):
 
 	move_and_slide()
 
 
-func _on_animated_sprite_2d_animation_finished() -> void:
+func _on_animated_sprite_2d_animation_finished():
 	if (sprite.animation == "attack_right"):
 		isAttacking = false
 		sprite.play("idle")
-		pass # Replace with function body.
+
+	elif (sprite.animation == "attack_down"):
+		isAttacking = false
+		sprite.play("idle")
+
+	elif (sprite.animation == "attack_up"):
+		isAttacking = false
+		sprite.play("idle_up")
