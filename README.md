@@ -6,6 +6,8 @@
 * Movement and Collision
 * Enemies and Traps
 * Tilemaps and Worldbuilding
+* Combat
+* GUI/UI
 * ?
 
 ### Examples/Locations of Implemented Features for Grading
@@ -19,10 +21,4 @@
 	* Scenes -
 * Movement and Collisions -
 * Enemies and Traps -
-* Tilemaps and Worldbuilding -
-
-### ?
-* Kids Are Not Your Enemies, Its Stupid, To Hurt Everyone, But Everyone Says Tonight, Really Are People Playing Everybody's Reset's -
-* Something Once, Implemented Scenes, Tilemaps Yellow Locations Encapsulation README, To Hurt Everyone, Collision README Encapsulation Abstraction Template Once README
-* Something Once, Implemented Scenes, Kids Done Once Template
-* Something Once, Implemented Scenes, Features README Abstraction Node Kids, Once Collision Encapsulation Abstraction Node
+* Tilemaps and Worldbuilding - Terrain Sets, Mutiple tilesets using 4.3 TileMapLayer, physic layers for collision, multiple zones.
