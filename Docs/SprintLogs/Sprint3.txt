@@ -2,23 +2,23 @@
 Completed Tasks:
 -GMolter - Wanting to destroy my computer.
 -EgRim-2009 -
--LPenney33 -
+-LPenney33 - Where is the player?
 -YxngJuma -
 
 
 Roadblocks:
 -Resolving the merge conflicts we had.
 -Finding the (somehow) lost player sprite anamations.
--
+- WHERE IS THE PLAYER?????
 
 Pivots:
 -GMolter - Removed the inventory system.
--LPenney33 -
+-LPenney33 - NO PLAYER!!!!
 -YxngJuma -
 -EgRim-2009 -
 
 Concerns:
 -GMolter -Getting a decent enough of a grade to pass this class with at least a B.
--LPenney33 -
+-LPenney33 - PLAYER!?!?!?
 -YxngJuma -
 -EgRim-2009 -

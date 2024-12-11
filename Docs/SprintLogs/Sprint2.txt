@@ -2,23 +2,23 @@
 Completed Tasks:
 -GMolter - UI
 -EgRim-2009 -
--LPenney33 -
+-LPenney33 - Tilemaps Done, Decoration, Some Teleportation
 -YxngJuma -
 
 
 Roadblocks:
 - Finding a good inventory library.
--
+- Getting a working Player.
 -
 
 Pivots:
 -GMolter -considering dsiregarding the inventory functionality Completely.
--LPenney33 -
+-LPenney33 - No player to test teleportation with.
 -YxngJuma -
 -EgRim-2009 -
 
 Concerns:
 -GMolter -Merging all seperate functionalities smoothly.
--LPenney33 -
+-LPenney33 - Merging
 -YxngJuma -
 -EgRim-2009 -
