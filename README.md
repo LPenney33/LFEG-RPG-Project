@@ -31,11 +31,11 @@ NOT DONE NOT DONE NOT DONE NOT DONE NOT DONE NOT DONE NOT DONE NOT DONE NOT DONE
 * Polymorphism -
 * Abstraction -
 * Godot Features
-	* Node Types -
-	* Signals -
-	* Scenes -
-* Movement and Collisions -
-* Enemies and Traps -
+	* Node Types - CharacterBody2D, Area2D, CollisionShape2D, Camera2D
+	* Signals - isActionJustPressed
+	* Scenes - Multiple "maps"
+* Movement and Collisions - All scenes including a player.
+* Enemies and Traps - In Each HOA's Dedicated Throne Room
 * Tilemaps and Worldbuilding - Terrain Sets, Mutiple tilesets using 4.3 TileMapLayer, physic layers for collision, multiple zones.
 
 ### How to Play!
