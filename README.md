@@ -15,7 +15,7 @@ NOT DONE NOT DONE NOT DONE NOT DONE NOT DONE NOT DONE NOT DONE NOT DONE NOT DONE
 
 
 ### Our Project!
-* You are a lonley adventurer caught between a fued of 2 villages, fight between the villages to protect your own home!
+* You are a lonely adventurer caught between a fued of 2 villages, fight between the villages to protect your own home!
 
 ### Gameplay Features to Be Graded (Max 8)
 * Movement and Collision
