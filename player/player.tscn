@@ -345,7 +345,7 @@ radius = 0.0702232
 height = 1.24669
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x4dh4"]
-radius = 55.8555
+radius = 19.0532
 
 [node name="player" type="CharacterBody2D"]
 scale = Vector2(1.8, -0.443)

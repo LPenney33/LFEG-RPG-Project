@@ -85,6 +85,3 @@ shape = SubResource("CircleShape2D_mmh8i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="attackArea"]
 shape = SubResource("CircleShape2D_h55n5")
-
-[connection signal="body_entered" from="detectionArea" to="." method="_on_detection_area_body_entered"]
-[connection signal="body_exited" from="detectionArea" to="." method="_on_detection_area_body_exited"]

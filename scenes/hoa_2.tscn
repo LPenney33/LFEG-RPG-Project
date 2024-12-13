@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://cjqgmrvu1jyss"]
+[gd_scene load_steps=17 format=4 uid="uid://cm3moqsigu7sj"]
 
 [ext_resource type="Texture2D" uid="uid://ck2m02tvq067b" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_B_Exteriors.png" id="1_s126l"]
 [ext_resource type="Texture2D" uid="uid://chsxmxkdxa0s2" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_A_Hills2.png" id="2_qledy"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dfj3dgns4knm7" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_E_Small_Village2.png" id="5_8f16d"]
 [ext_resource type="PackedScene" uid="uid://cwtagbirattfe" path="res://player/player.tscn" id="6_q3ydh"]
 [ext_resource type="Script" path="res://scene controllers/scene_control_hoa_2.gd" id="7_omypd"]
+[ext_resource type="PackedScene" uid="uid://0ceb7rc045lp" path="res://Enemy/enemy.tscn" id="8_jehcs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g4ldn"]
 texture = ExtResource("1_s126l")
@@ -1782,6 +1783,46 @@ shape = SubResource("RectangleShape2D_5loia")
 z_index = 1
 position = Vector2(2, 143)
 shape = SubResource("RectangleShape2D_nilcv")
+
+[node name="EnemyGuy" parent="." instance=ExtResource("8_jehcs")]
+z_index = 6
+position = Vector2(564, 58)
+
+[node name="EnemyGuy2" parent="." instance=ExtResource("8_jehcs")]
+z_index = 6
+position = Vector2(559, 238)
+
+[node name="EnemyGuy8" parent="." instance=ExtResource("8_jehcs")]
+z_index = 6
+position = Vector2(70, 344)
+
+[node name="EnemyGuy10" parent="." instance=ExtResource("8_jehcs")]
+z_index = 6
+position = Vector2(135, 67)
+
+[node name="EnemyGuy9" parent="." instance=ExtResource("8_jehcs")]
+z_index = 6
+position = Vector2(249, 310)
+
+[node name="EnemyGuy3" parent="." instance=ExtResource("8_jehcs")]
+z_index = 6
+position = Vector2(1074, 239)
+
+[node name="EnemyGuy4" parent="." instance=ExtResource("8_jehcs")]
+z_index = 6
+position = Vector2(874, 317)
+
+[node name="EnemyGuy5" parent="." instance=ExtResource("8_jehcs")]
+z_index = 6
+position = Vector2(877, 182)
+
+[node name="EnemyGuy6" parent="." instance=ExtResource("8_jehcs")]
+z_index = 6
+position = Vector2(300, 162)
+
+[node name="EnemyGuy7" parent="." instance=ExtResource("8_jehcs")]
+z_index = 6
+position = Vector2(808, 8)
 
 [connection signal="body_entered" from="SceneControlHOA2/HOA2-Teleporter" to="SceneControlHOA2" method="_on_hoa_2inside_teleport_child_entered_tree"]
 [connection signal="body_entered" from="SceneControlHOA2/HOUSE-Teleporter" to="SceneControlHOA2" method="_on_househoa_2_teleport_child_entered_tree"]
