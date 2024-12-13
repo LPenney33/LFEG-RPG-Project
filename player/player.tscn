@@ -228,14 +228,16 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hh5rf"]
-radius = 0.0702232
-height = 1.24669
+radius = 0.0400127
+height = 0.316624
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x4dh4"]
 radius = 55.8555
 
 [node name="player" type="CharacterBody2D"]
 scale = Vector2(1.8, -0.443)
+collision_mask = 2
+motion_mode = 1
 script = ExtResource("1_xei1s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -248,7 +250,7 @@ frame = 3
 frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.106642, 1.19209e-07)
+position = Vector2(0, -18.45)
 scale = Vector2(-97.1914, -40.3046)
 shape = SubResource("CapsuleShape2D_hh5rf")
 
@@ -256,7 +258,7 @@ shape = SubResource("CapsuleShape2D_hh5rf")
 scale = Vector2(0.906766, -2.98265)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="range"]
-position = Vector2(3.8147e-06, 0)
+position = Vector2(0, 2.38419e-07)
 shape = SubResource("CircleShape2D_x4dh4")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
