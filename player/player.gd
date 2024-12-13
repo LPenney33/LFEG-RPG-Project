@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name player
 
 @export var speed = 60
 @export var sprint_speed = 120
@@ -9,7 +10,6 @@ enum Directions{UP,DOWN,LEFT,RIGHT}
 var facing : Directions = Directions.DOWN
 
 func _process(_delta):
-	print(isAttacking)
 	var direction = Input.get_vector("left", "right", "up", "down")
 	if Input.is_action_pressed("click"):
 		target = get_global_mouse_position()

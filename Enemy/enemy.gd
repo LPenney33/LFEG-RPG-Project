@@ -1,32 +1,60 @@
-extends CharacterBody2D
+extends Node2D
+class_name enemy
 
+#higher the speed var slower the enemy
 @export var speed = 100
-@export var sprint_speed = 450
+#higher the speed slower the attack
+@export var attack_speed = 1
+@export var damage = 1
+@export var health = 20
+
+#change of state vars
+var player_chase = false
+var player = null
+var attacking = false
+#alive or dying
+var state = "alive"
+
 @onready var sprite = $AnimatedSprite2D
-var target = position
+@onready var attackTimer = $attackTimer
 
-func _process(_delta):
-	var direction = Input.get_vector("left", "right", "up", "down")
-	if Input.is_action_pressed("click"):
-		target = get_global_mouse_position()
-	velocity.x = direction.x * speed
-	velocity.y = direction.y * speed
-	#fix code
-	if direction.x ==0 && direction.y ==0:
-		sprite.play("idle")
+#chases player if in range
+func range_body_entered(body:Node2D):
+	if (body is player):
+		player = body
+		player_chase = true
+#stops chasing player if out of range
+func range_body_exited(body:Node2D):
+	if(body is player):
+		player = null
+		player_chase = false
 
-	if direction.x > 0:
-		sprite.play("right")
-		sprite.flip_h = false
+#starts attack cooldown
+func start_attack_timer():
+	attackTimer.start()
+	attacking = true
 
-	if direction.x < 0:
-		sprite.play("right")
-		sprite.flip_h = true
+#stops attack cooldown
+func stop_attack_timer():
+	attackTimer.stop()
+	attacking = false
 
-	if Input.is_action_pressed("sprint"):
-		velocity = velocity.normalized() * sprint_speed
-	else:
-		velocity = velocity.normalized() * speed
-func _physics_process(_delta):
+func attack():
+	sprite.play("attack")
 
-	move_and_slide()
+func damaged(damageTaken):
+	health -= damageTaken
+	sprite.modulate = Color(1,0,0)
+	await get_tree().create_timer(0.2).timeout #wait for 2 seconds
+	sprite.modulate = Color(1,1,1)
+	if health<=0 and state!="dying":
+		await get_tree().create_timer(0.2).timeout
+		queue_free()
+#checks if player is in range of melee attack
+func _on_attack_area_body_entered(body:Node2D) -> void:
+	if(body is player):
+		self.start_attack_timer()
+		body.health -= damage
+func _on_attack_area_body_exited(body:Node2D) -> void:
+	if(body is player):
+		self.stop_attack_timer()

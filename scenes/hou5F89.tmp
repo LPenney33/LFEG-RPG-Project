@@ -2042,39 +2042,7 @@ shape = SubResource("RectangleShape2D_ckd8i")
 
 [node name="Enemy" parent="." instance=ExtResource("7_tt5nu")]
 z_index = 5
-position = Vector2(20, -14)
-
-[node name="Enemy2" parent="." instance=ExtResource("7_tt5nu")]
-z_index = 5
-position = Vector2(446, 48)
-
-[node name="Enemy3" parent="." instance=ExtResource("7_tt5nu")]
-z_index = 5
-position = Vector2(103, -134)
-
-[node name="Enemy4" parent="." instance=ExtResource("7_tt5nu")]
-z_index = 5
-position = Vector2(614, -104)
-
-[node name="Enemy5" parent="." instance=ExtResource("7_tt5nu")]
-z_index = 5
-position = Vector2(639, 185)
-
-[node name="Enemy6" parent="." instance=ExtResource("7_tt5nu")]
-z_index = 5
-position = Vector2(399, 221)
-
-[node name="Enemy7" parent="." instance=ExtResource("7_tt5nu")]
-z_index = 5
-position = Vector2(135, 210)
-
-[node name="Enemy8" parent="." instance=ExtResource("7_tt5nu")]
-z_index = 5
-position = Vector2(-15, 170)
-
-[node name="Enemy9" parent="." instance=ExtResource("7_tt5nu")]
-z_index = 5
-position = Vector2(326, -100)
+position = Vector2(42, -24)
 
 [connection signal="body_entered" from="SceneControl/HOA1-Teleporter" to="SceneControl" method="_on_hoa_1_teleport_child_entered_tree"]
 [connection signal="body_entered" from="SceneControl/HOA2-Teleporter" to="SceneControl" method="_on_hoa_2_teleport_child_entered_tree"]

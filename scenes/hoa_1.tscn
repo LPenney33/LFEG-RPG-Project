@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://b3tnby1g5boht"]
+[gd_scene load_steps=15 format=4 uid="uid://drottpn8ysr0x"]
 
 [ext_resource type="Texture2D" uid="uid://ck2m02tvq067b" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_B_Exteriors.png" id="1_ltwby"]
 [ext_resource type="Texture2D" uid="uid://chsxmxkdxa0s2" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_A_Hills2.png" id="2_roxvf"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b3ym6tv5lfvd2" path="res://assets/TinyTales/Tilesets/Overworld1/Images/Set_E_Small_Village1.png" id="4_lj100"]
 [ext_resource type="PackedScene" uid="uid://cwtagbirattfe" path="res://player/player.tscn" id="5_nh0jx"]
 [ext_resource type="Script" path="res://scene controllers/scene_control_hoa_1.gd" id="6_k0cnd"]
+[ext_resource type="PackedScene" uid="uid://0ceb7rc045lp" path="res://Enemy/enemy.tscn" id="7_s81go"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xmapx"]
 texture = ExtResource("1_ltwby")
@@ -1526,6 +1527,30 @@ position = Vector2(0, 32)
 z_index = 1
 position = Vector2(1148, 151)
 shape = SubResource("RectangleShape2D_b7qa7")
+
+[node name="EnemyGuy" parent="." instance=ExtResource("7_s81go")]
+z_index = 6
+position = Vector2(320, 281)
+
+[node name="EnemyGuy2" parent="." instance=ExtResource("7_s81go")]
+z_index = 6
+position = Vector2(200, 350)
+
+[node name="EnemyGuy3" parent="." instance=ExtResource("7_s81go")]
+z_index = 6
+position = Vector2(935, 147)
+
+[node name="EnemyGuy4" parent="." instance=ExtResource("7_s81go")]
+z_index = 6
+position = Vector2(636, 420)
+
+[node name="EnemyGuy5" parent="." instance=ExtResource("7_s81go")]
+z_index = 6
+position = Vector2(345, 405)
+
+[node name="EnemyGuy6" parent="." instance=ExtResource("7_s81go")]
+z_index = 6
+position = Vector2(721, 219)
 
 [connection signal="body_entered" from="SceneControlHOA1/HOA1-Teleporter" to="SceneControlHOA1" method="_on_hoa_1inside_teleport_child_entered_tree"]
 [connection signal="body_entered" from="SceneControlHOA1/HOUSE-Teleporter" to="SceneControlHOA1" method="_on_househoa_1_teleport_child_entered_tree"]
